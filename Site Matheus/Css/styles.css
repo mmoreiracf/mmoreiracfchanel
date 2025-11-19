@@ -1,0 +1,249 @@
+/* ===============================
+   ESTILO BASE • mmoreiracf
+   Paleta:
+   - Preto café: #2A2426
+   - Amarelo destaque: #EFE31B
+   - Cinza claro: #f2f2f2f2
+   Fonte: Poppins
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f2f2f2f2;
+    color: #2A2426;
+    line-height: 1.6;
+}
+
+/* CONTAINERS */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background: #2A2426;
+    padding: 20px 0;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #EFE31B;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HERO */
+.hero {
+    background: #2A2426;
+    color: #EFE31B;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #EFE31B;
+    color: #2A2426;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #d8ce18;
+}
+
+/* ARTIGOS */
+.artigos {
+    padding: 60px 0;
+}
+
+.artigos h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+.card p {
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.card a {
+    color: #2A2426;
+    background: #EFE31B;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* VÍDEOS */
+.videos {
+    background: #2A2426;
+    color: #EFE31B;
+    padding: 60px 0;
+}
+
+.videos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.video-card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* SOBRE */
+.sobre {
+    padding: 60px 0;
+}
+
+.sobre h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* CONTATO */
+.contato {
+    padding: 60px 0;
+    background: #EFE31B;
+    color: #2A2426;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+button {
+    background: #2A2426;
+    color: #EFE31B;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* FOOTER */
+footer {
+    background: #2A2426;
+    color: #EFE31B;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
